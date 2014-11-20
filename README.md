@@ -30,5 +30,5 @@ docker run -it --rm \
 -v $(pwd)/node_modules:/app/node_modules \
 -v $(pwd)/bower_components:/app/bower_components \
 -w /app yeoman-builder:latest \
-bower --allow-root --config.interactive=false install
+grunt build
 ```
