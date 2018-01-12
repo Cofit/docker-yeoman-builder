@@ -4,7 +4,7 @@ FROM ruby:2.1
 
 RUN gem install compass
 
-ENV NODE_VERSION 0.10.33
+ENV NODE_VERSION 4.4.5
 
 RUN curl -SLO "http://nodejs.org/dist/v$NODE_VERSION/node-v$NODE_VERSION-linux-x64.tar.gz" \
 	&& tar -xzf "node-v$NODE_VERSION-linux-x64.tar.gz" -C /usr/local --strip-components=1 \
